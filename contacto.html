@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Unidad Médica Juárez - Contacto</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+  <link href="css/estilos.css" rel="stylesheet" />
+  <style>
+    body {
+      scroll-behavior: smooth;
+      background: url('https://cdn.pixabay.com/photo/2017/02/01/09/28/doctor-2027768_1280.jpg') no-repeat center center fixed;
+      background-size: cover;
+      background-blend-mode: lighten;
+      background-color: rgba(255, 255, 255, 0.85);
+    }
+
+    .fade-in {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+    }
+
+    .fade-in.show {
+      opacity: 1;
+      transform: none;
+    }
+
+    .form-card {
+      background-color: #ffffff;
+      padding: 30px;
+      border-radius: 20px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .form-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .info-contacto h5 {
+      margin-top: 20px;
+      font-weight: 600;
+    }
+
+    .mapa iframe {
+      border-radius: 15px;
+      width: 100%;
+      height: 300px;
+      transition: transform 0.5s ease;
+    }
+
+    .mapa iframe:hover {
+      transform: scale(1.03);
+    }
+
+    .social-icons i {
+      font-size: 1.5rem;
+      margin-right: 10px;
+      color: #0d6efd;
+    }
+
+    .social-info p {
+      margin-bottom: 8px;
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg fixed-top bg-light shadow-sm">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="index.html">
+        <img src="img/logo.png" alt="Logo" width="40" height="40" class="me-2" />
+        Unidad Médica Juárez
+      </a>
+      <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
+          <li class="nav-item"><a class="nav-link" href="servicios.html">Servicios</a></li>
+          <li class="nav-item"><a class="nav-link active" href="contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section class="py-5 mt-5" id="contacto">
+    <div class="container">
+      <h2 class="section-title text-center mb-4 fade-in" style="transition-delay: 0.2s;">Contáctanos</h2>
+      <div class="row g-4">
+        <!-- Formulario -->
+        <div class="col-lg-6 fade-in" style="transition-delay: 0.4s;">
+          <div class="form-card">
+            <h5 class="text-center mb-4">¿Tienes alguna duda o necesitas más información?</h5>
+            <form action="https://formsubmit.co/medicaintegraljuarez@gmail.com" method="POST">
+              <div class="mb-3">
+                <label for="nombre" class="form-label">Nombre</label>
+                <input type="text" class="form-control" id="nombre" name="nombre" required>
+              </div>
+              <div class="mb-3">
+                <label for="correo" class="form-label">Correo Electrónico</label>
+                <input type="email" class="form-control" id="correo" name="correo" required>
+              </div>
+              <div class="mb-3">
+                <label for="mensaje" class="form-label">Mensaje</label>
+                <textarea class="form-control" id="mensaje" name="mensaje" rows="4" required></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary w-100">
+                <i class="bi bi-send-fill me-2"></i>Enviar mensaje
+              </button>
+            </form>
+
+            <!-- Redes sociales -->
+            <div class="text-center mt-4 pt-3 border-top">
+              <h5 class="mb-3">Síguenos o contáctanos:</h5>
+              <div class="d-flex justify-content-center gap-4 align-items-center">
+                <a href="https://www.facebook.com/share/1EoT77ygMh/?mibextid=wwXIfr" target="_blank" aria-label="Facebook">
+                  <i class="bi bi-facebook" style="font-size: 2rem; color: #1877f2;"></i>
+                </a>
+                <a href="https://wa.me/527731822958" target="_blank" aria-label="WhatsApp">
+                  <i class="bi bi-whatsapp" style="font-size: 2rem; color: #25d366;"></i>
+                </a>
+                <a href="https://www.instagram.com/medicajuarez2025/" target="_blank" aria-label="Instagram">
+                  <i class="bi bi-instagram" style="font-size: 2rem; color: #e4405f;"></i>
+                </a>
+                <a href="https://www.tiktok.com/@medicaazul25" target="_blank" aria-label="TikTok">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="#000">
+                    <path d="M9.75 3.008a.75.75 0 0 1 .75.75V15a3.75 3.75 0 1 1-3.75-3.75.75.75 0 0 1 0 1.5 2.25 2.25 0 1 0 2.25 2.25V2.257a.75.75 0 0 1 .75-.75ZM13.5 2.25a.75.75 0 0 1 .75-.75h1.5a.75.75 0 0 1 .75.75 3.75 3.75 0 0 0 3.75 3.75.75.75 0 0 1 .75.75v1.5a.75.75 0 0 1-.75.75 6 6 0 0 1-3.75-1.336V15a5.25 5.25 0 1 1-5.25-5.25.75.75 0 0 1 0 1.5 3.75 3.75 0 1 0 3.75 3.75V3a.75.75 0 0 1 .75-.75Z"/>
+                  </svg>
+                </a>
+                <a href="tel:7737852296" aria-label="Teléfono">
+                  <i class="bi bi-telephone-fill" style="font-size: 2rem; color: #0d6efd;"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Información de contacto -->
+        <div class="col-lg-6 fade-in" style="transition-delay: 0.6s;">
+          <div class="info-contacto">
+            <h5><i class="bi bi-geo-alt-fill me-2 text-primary"></i>Dirección:</h5>
+            <p>Zimapán 22, San Miguel Vindhó, 42842 San Miguel Vindhó, Hgo.</p>
+
+            <h5><i class="bi bi-telephone-fill me-2 text-primary"></i>Teléfono:</h5>
+            <p>(773) 785-2297</p>
+
+            <h5><i class="bi bi-envelope-fill me-2 text-primary"></i>Email:</h5>
+            <p>contacto@umedicajuarez.com</p>
+          </div>
+
+          <div class="mapa mt-4">
+            <iframe
+              src="https://www.google.com/maps?q=Zimapán+22,+San+Miguel+Vindhó,+42842+San+Miguel+Vindhó,+Hgo.&output=embed"
+              loading="lazy" allowfullscreen>
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="text-center mt-5 bg-light py-3">
+    <div class="container">
+      <p class="mb-0">&copy; 2025 Unidad Médica Juárez.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    const faders = document.querySelectorAll('.fade-in');
+    const appearOptions = {
+      threshold: 0.1,
+      rootMargin: "0px 0px -50px 0px"
+    };
+    const appearOnScroll = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('show');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, appearOptions);
+    faders.forEach(fader => {
+      appearOnScroll.observe(fader);
+    });
+  </script>
+</body>
+</html>
