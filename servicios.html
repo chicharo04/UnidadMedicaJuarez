@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Unidad Médica Juárez - Servicios</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
+
+  <!-- Estilos personalizados -->
+  <style>
+    body {
+      background-color: #ffffff;
+    }
+
+    .navbar {
+      background-color: #001f3f !important;
+    }
+
+    .navbar .nav-link,
+    .navbar .navbar-brand {
+      color: white !important;
+    }
+
+    .navbar .nav-link:hover,
+    .navbar .nav-link.active {
+      color: #d62828 !important;
+    }
+
+    .navbar-brand img {
+      border-radius: 50%;
+    }
+
+    .section-title {
+      font-weight: bold;
+      color: #001f3f;
+      margin-bottom: 30px;
+      text-align: center;
+      animation: fadeInDown 1s ease;
+    }
+
+    .sucursal-title {
+      font-size: 1.8rem;
+      font-weight: 600;
+      margin-top: 40px;
+      margin-bottom: 20px;
+      color: #001f3f;
+      border-bottom: 3px solid #d62828;
+      display: inline-block;
+      animation: fadeInUp 1s ease;
+    }
+
+    .accordion-item {
+      border-left: 5px solid #d62828;
+      border-radius: 8px;
+      margin-bottom: 10px;
+      background-color: #fff;
+      transition: box-shadow 0.3s ease-in-out;
+    }
+
+    .accordion-item:hover {
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .accordion-button {
+      font-weight: bold;
+      background-color: #f8f9fa;
+      color: #001f3f;
+    }
+
+    .accordion-button .icon {
+      color: #001f3f;
+      margin-right: 10px;
+      transition: transform 0.3s ease;
+    }
+
+    .accordion-button:not(.collapsed) {
+      background-color: #d62828;
+      color: white;
+    }
+
+    .accordion-button:not(.collapsed) .icon {
+      color: white;
+      transform: rotate(90deg);
+    }
+
+    .accordion-body {
+      background-color: white;
+      border-top: 1px solid #dee2e6;
+      animation: slideFade 0.4s ease;
+    }
+
+    .btn-sucursal {
+      background-color: #001f3f;
+      color: white;
+      border: 2px solid #001f3f;
+      padding: 12px 30px;
+      border-radius: 8px;
+      font-weight: bold;
+      transition: all 0.3s ease;
+    }
+
+    .btn-sucursal:hover {
+      background-color: #d62828;
+      border-color: #d62828;
+      color: white;
+      transform: scale(1.05);
+    }
+
+    footer {
+      background-color: #001f3f;
+      color: white;
+    }
+
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes slideFade {
+      from { opacity: 0; transform: translateY(-10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="index.html">
+        <img src="img/logo.png" alt="Logo" width="40" height="40" class="me-2" />
+        Unidad Médica Juárez
+      </a>
+      <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
+          <li class="nav-item"><a class="nav-link active" href="servicios.html">Servicios</a></li>
+          <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Servicios -->
+  <section class="py-5 mt-5">
+    <div class="container">
+
+      <!-- Título principal -->
+      <h2 class="section-title">Nuestras Sucursales</h2>
+
+      <!-- Sucursal Hidalgo -->
+      <h3 class="sucursal-title">Sucursal Hidalgo</h3>
+
+      <div class="accordion mt-3" id="accordionServicios">
+        <!-- Servicio 1 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="heading1">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1">
+              <i class="fas fa-stethoscope icon"></i> Consulta Médica General
+            </button>
+          </h2>
+          <div id="collapse1" class="accordion-collapse collapse" data-bs-parent="#accordionServicios">
+            <div class="accordion-body text-start">
+              <p>Atención primaria para diagnosticar y tratar enfermedades comunes.</p>
+              <ul>
+                <li>C001 - Consulta médica general</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Servicio 2 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="heading2">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2">
+              <i class="fas fa-user-md icon"></i> Consulta Especializada
+            </button>
+          </h2>
+          <div id="collapse2" class="accordion-collapse collapse" data-bs-parent="#accordionServicios">
+            <div class="accordion-body text-start">
+              <p>Diagnósticos y tratamientos por médicos especialistas.</p>
+              <ul>
+                <li>C002 - Ginecología</li>
+                <li>C003 - Pediatría</li>
+                <li>C004 - Dermatología</li>
+                <li>C005 - Medicina Interna</li>
+                <li>C006 - Control prenatal</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Servicio 3 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="heading3">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3">
+              <i class="fas fa-vials icon"></i> Laboratorio Clínico
+            </button>
+          </h2>
+          <div id="collapse3" class="accordion-collapse collapse" data-bs-parent="#accordionServicios">
+            <div class="accordion-body text-start">
+              <p>Pruebas clínicas para diagnósticos de salud.</p>
+              <ul>
+                <li>L1074 - 17 Alfa Hidroxi Progesterona</li>
+                <li>L1568 - AC. Anti-Bartonella Henselae IgG e IgM</li>
+                <li>L1391 - AC. Anti-Cardiolipinas IgG e IgM</li>
+                <li>L1238 - AC. Anti-Citoplasma de Neutrófilos (c-ANCA)</li>
+                <li>L1001 - Prueba de embarazo en sangre</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Servicio 4 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="heading4">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4">
+              <i class="fas fa-x-ray icon"></i> Procedimientos Diagnósticos
+            </button>
+          </h2>
+          <div id="collapse4" class="accordion-collapse collapse" data-bs-parent="#accordionServicios">
+            <div class="accordion-body text-start">
+              <p>Imágenes y pruebas especiales para evaluación médica.</p>
+              <ul>
+                <li>P001 - Electrocardiograma (ECG)</li>
+                <li>P002 - Ultrasonido obstétrico</li>
+                <li>P003 - Radiografía de tórax</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Botones de Sucursales -->
+      <div class="row justify-content-center mt-5">
+        <div class="col-md-6 mb-4 d-flex flex-column align-items-center text-center">
+          <h3 class="sucursal-title">Sucursal Conejos</h3>
+          <a href="conejos.html" class="btn btn-lg btn-sucursal mt-3">Ir a Conejos</a>
+        </div>
+        <div class="col-md-6 mb-4 d-flex flex-column align-items-center text-center">
+          <h3 class="sucursal-title">Sucursal Puebla</h3>
+          <a href="puebla.html" class="btn btn-lg btn-sucursal mt-3">Ir a Puebla</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center py-3">
+    <div class="container">
+      <p class="mb-0">&copy; 2025 Unidad Médica Juárez.</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
